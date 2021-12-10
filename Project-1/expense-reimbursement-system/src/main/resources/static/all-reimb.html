@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-one</title>
+    
+    
+    <!-- <link rel = "stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+    <div id ="reimb-image-modal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+
+    <div id="fnLn"></div>
+
+    <div class="container" >
+        <div class=" x table-container table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+            <div id="fnLn">
+
+            </div>
+            <h1 class="content is-large">Reimbursemt</h1>
+            <table id="reimb_table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Amount</th>
+                        <th>Submitted</th>
+                        <th>Resolved</th>
+                        <th>Description</th>
+                        <th>Author</th>
+                        <th>Resolver</th>
+                        <th>Status</th>
+                        <th>Type</th>
+                        <th>Receipt</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- <h1>Fixed Table header</h1>
+  <div class="tbl-header">
+    <table cellpadding="0" cellspacing="0" border="0" id="reimb_table">
+      <thead>
+        <tr>
+            <th>Id</th>
+            <th>Amount</th>
+            <th>Submitted</th>
+            <th>Resolved</th>
+            <th>Description</th>
+            <th>Author</th>
+            <th>Resolver</th>
+            <th>Status</th>
+            <th>Type</th>
+            <th>Receipt</th>
+            <th>Approve/Denied</th>
+            <th>Submit</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div class="tbl-content" id="reimb_table">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <tbody>
+      </tbody>
+    </table>
+  </div> -->
+
+<!-- <script>
+    $(window).on("load resize ", function() {
+  var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+  $('.tbl-header').css({'padding-right':scrollWidth});
+}).resize();
+</script> -->
+    
+    <div id="container"></div>
+    <script src="manager.js"></script>
+</body>
+</div>
+</html>

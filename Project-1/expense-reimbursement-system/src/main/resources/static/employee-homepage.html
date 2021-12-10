@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel = "stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+    <div id ="reimb-image-modal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    <h1>Welcome to the Employee homepage</h1>
+    <button id="logout">Logout</button>
+
+    <div class=""></div>
+
+    <div class="main-container" >
+        <div class="table-container table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+            <div id="fnLn">
+
+            </div>
+            <h1 class="content is-large">Reimbursemt</h1>
+            <table id="reimb_table">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>Amount</th>
+                        <th>Submitted</th>
+                        <th>Resolved</th>
+                        <th>Description</th>
+                        <th>Author</th>
+                        <th>Resolver</th>
+                        <th>Status</th>
+                        <th>Type</th>
+                        <th>Receipt</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+        <div id="reimbursement-submit-form">
+            <h2>Submit New Reimbursement</h2>
+
+            <div class="field">
+                <!-- <label for="first-name">First Name:</label>
+                <input type="text" id="fn" />
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="ln" /> -->
+                <label for="amount" class="label">Amount:</label>
+                <div class="control">
+                    <input type="number" id="amount" class="input is-primary" />
+                </div>
+                </div>
+                <label for="reimb-type" class="label">Select reimbursement type:</label>
+                <select name="reimb" id="reimbType" class="label">
+                    <option value="">Select</option>
+                    <option value="lodging">Lodging</option>
+                    <option value="travel">Travel</option>
+                    <option value="food">Food</option>
+                    <option value=" other">Other</option>
+                </select>
+                <label for="desc" class="label">Description:</label>
+                <textarea id="description" class="input is-primary"></textarea>
+            </div>
+            
+            <div>
+                <label for="reimbFile">Reimbursement Upload (JPEG, PNG, or GIF)</label>
+                <input type="file" id="reimbursement-file" />
+            </div>
+            
+            <div class="field is-grouped is-grouped-left">
+                <button id="submit-reimbursement-btn" class="button is-primary">Submit reimbursement</button>
+            </div>
+        </div>
+    </div>
+    <script src="employee.js"></script>
+
+
+</body>
+</html>
